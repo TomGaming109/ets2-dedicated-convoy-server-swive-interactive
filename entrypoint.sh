@@ -13,7 +13,7 @@ cd /home/container
 mkdir /home/container/steamcmd
 cd /home/container/steamcmd
 tar -xvzf steamcmd_linux.tar.gz
-bash /home/container/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container +app_update 1948160 +quit
+bash /home/container/steamcmd/steamcmd.sh +force_install_dir /home/container +login anonymous +app_update 1948160 +quit
 cd /home/container/bin/linux_x64
 
 echo "[INFO]: Starting server..."
