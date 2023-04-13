@@ -16,7 +16,9 @@ WORKDIR /home/container
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y python3 \
     && mkdir -p "${SAVEGAME_LOCATION}" \
-    && mkdir -p /home/container/default_packages 
+    && mkdir -p /home/container/default_packages \
+    && apt install steamcmd \
+    && steamcmd +login anonymous +app_update 1948160 +quit
 
 COPY ets_server_entrypoint.py /ets_server_entrypoint.py
 COPY entrypoint.sh /entrypoint
