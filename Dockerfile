@@ -28,5 +28,5 @@ COPY ["${DEFAULT_PACKAGES}/server_packages.sii", "/default_packages/"]
 # needed for ETS server to find steamclient.so
 ENV LD_LIBRARY_PATH='/home/container/linux64'
 
-ENTRYPOINT [ "/home/container/entrypoint" ]
+ENTRYPOINT [ "/entrypoint" ]
 CMD [ "bash", "-c", "${EXECUTABLE}" ]
