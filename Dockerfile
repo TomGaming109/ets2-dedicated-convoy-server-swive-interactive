@@ -1,4 +1,4 @@
-FROM steamcmd/steamcmd:ubuntu
+FROM ghcr.io/parkervcp/steamcmd:ubuntu
 
 ARG APP_ID=1948160
 ARG SAVEGAME_LOCATION="/home/container/EuroTruckSimulator2/"
