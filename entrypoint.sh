@@ -5,8 +5,9 @@
 /usr/bin/python3 /ets_server_entrypoint.py
 
 # Copy default server_packages if they do not exist
-cp -n /default_packages/server_packages.sii "${SAVEGAME_LOCATION}"
-cp -n /default_packages/server_packages.dat "${SAVEGAME_LOCATION}"
+mkdir "/home/container/EuroTruckSimulator2/"
+cp -n /default_packages/server_packages.sii "$/home/container/EuroTruckSimulator2/"
+cp -n /default_packages/server_packages.dat "/home/container/EuroTruckSimulator2/"
 
 echo "[INFO]: Starting server..."
 exec "$@"
