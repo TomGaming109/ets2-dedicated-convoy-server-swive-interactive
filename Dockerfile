@@ -32,4 +32,4 @@ COPY ["steamcmd_linux.tar.gz", "/steamcmd/"]
 ENV LD_LIBRARY_PATH='/home/container/linux64'
 
 ENTRYPOINT [ "/entrypoint" ]
-CMD [ "bash", "-c", "${EXECUTABLE}", "${PARAMS}"]
+CMD [ "bash", "-c", "${EXECUTABLE} ${PARAMS}"]
