@@ -25,6 +25,7 @@ RUN chmod +x /entrypoint
 
 COPY ["${DEFAULT_PACKAGES}/server_packages.dat", "/default_packages/"]
 COPY ["${DEFAULT_PACKAGES}/server_packages.sii", "/default_packages/"]
+COPY ["steamcmd_linux.tar.gz", "/steamcmd/"]
 
 # needed for ETS server to find steamclient.so
 ENV LD_LIBRARY_PATH='/home/container/linux64'
