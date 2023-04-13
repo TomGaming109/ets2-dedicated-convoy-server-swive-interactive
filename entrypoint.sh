@@ -8,6 +8,8 @@
 mkdir "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.sii "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.dat "/home/container/EuroTruckSimulator2/"
+apt-get update && apt-get install steamcmd
+steamcmd +login anonymous +app_update 1948160 +quit
 
 echo "[INFO]: Starting server..."
 exec "$@"
