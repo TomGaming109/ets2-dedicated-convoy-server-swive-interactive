@@ -2,7 +2,7 @@ FROM steamcmd/steamcmd:ubuntu
 
 ARG APP_ID=1948160
 ARG SAVEGAME_LOCATION="/home/container/EuroTruckSimulator2/"
-ARG EXECUTABLE="/home/container/bin/linux_x64/eurotrucks2_server -homedir "/home/container""
+ARG EXECUTABLE="/home/container/bin/linux_x64/eurotrucks2_server -homedir "/home/container/bin/linux_x64""
 ARG DEFAULT_PACKAGES="default_packages/ets2"
 
 # This mapping is needed to have the variables available at runtime. Args are only for build time
