@@ -8,6 +8,7 @@
 mkdir "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.sii "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.dat "/home/container/EuroTruckSimulator2/"
+cp -n /steamcmd/steamcmd_linux.tar.gz "/home/container/steamcmd/"
 cd /home/container
 mkdir /home/container/steamcmd
 cd /home/container/steamcmd
