@@ -32,4 +32,4 @@ COPY ["steamcmd_linux.tar.gz", "/steamcmd/"]
 ENV LD_LIBRARY_PATH='/home/container/linux64'
 
 ENTRYPOINT [ "/entrypoint" ]
-CMD [ "bash", "-c", "/home/container/bin/linux_x64/eurotrucks2_server -homedir /home/container/bin/linux_x64"]
+CMD [ "bash", "-c", "/home/container/bin/linux_x64/eurotrucks2_server -homedir /home/container/bin/linux_x64 -nosingle -server /home/container/EuroTruckSimulator2/server_packages.sii -server_cfg /home/container/EuroTruckSimulator2/server_config.sii"]
