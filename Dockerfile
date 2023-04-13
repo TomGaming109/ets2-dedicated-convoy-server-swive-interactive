@@ -14,7 +14,8 @@ ENV APP_ID=${APP_ID}
 WORKDIR /home/container
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y python3 && curl \
+RUN apt-get update && apt-get install -y python3 \
+    && apk add curl
     && mkdir -p "${SAVEGAME_LOCATION}" \
     && mkdir -p /home/container/default_packages 
 
