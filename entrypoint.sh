@@ -9,7 +9,6 @@ mkdir "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.sii "/home/container/EuroTruckSimulator2/"
 cp -n /default_packages/server_packages.dat "/home/container/EuroTruckSimulator2/"
 cd /home/container
-apt-get update && apt-get install tar
 mkdir /home/container/steamcmd
 cd /home/container/steamcmd
 wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz
