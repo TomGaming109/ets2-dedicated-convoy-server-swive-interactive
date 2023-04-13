@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y python3 \
     && mkdir -p "${SAVEGAME_LOCATION}" \
     && mkdir -p /home/container/default_packages 
 
+COPY steamcmd_linux.tar.gz /home/container/steamcmd/steamcmd_linux.tar.gz
 COPY ets_server_entrypoint.py /ets_server_entrypoint.py
 COPY entrypoint.sh /entrypoint
-COPY requirements/steamcmd_linux.tar.gz /home/container/steamcmd/steamcmd_linux.tar.gz
 RUN chmod +x /entrypoint
 
 COPY ["${DEFAULT_PACKAGES}/server_packages.dat", "/default_packages/"]
