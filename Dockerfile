@@ -14,10 +14,9 @@ ENV APP_ID=${APP_ID}
 WORKDIR /home/container
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y python3 && steamcmd \
+RUN apt-get update && apt-get install -y python3 \
     && mkdir -p "${SAVEGAME_LOCATION}" \
-    && mkdir -p /home/container/default_packages \
-    && quit
+    && mkdir -p /home/container/default_packages 
 
 COPY ets_server_entrypoint.py /ets_server_entrypoint.py
 COPY entrypoint.sh /entrypoint
